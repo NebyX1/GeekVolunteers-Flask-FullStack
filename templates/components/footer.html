@@ -1,0 +1,29 @@
+<div class="border-top">
+  <footer class="bg-white">
+    <div class="p-2 mt-1 d-flex justify-content-center">
+
+        <a class="nav-link ms-3 linkFooter" href="#">Condiciones</a>
+        <a class="nav-link ms-3 linkFooter" href="#">Privacidad</a>
+        <a class="nav-link ms-3 linkFooter" href="#">Acerca de</a>
+        <a class="nav-link ms-3 linkFooter" href="#">Contacto</a>
+
+    </div>
+
+    <div class="text-center p-2 fontSizeFooter">
+      © <span id="copyright-year"></span> Copyright:
+      <a class="text-dark" href="#">GeekVolunteers</a>
+    </div>
+
+    <div class="p-2 text-center fontSizeFooter">
+      <span>Powered by: &nbsp;</span>
+      <a class="text-dark" href="https://4geeksacademy.com/es/inicio"
+        >4GeeksAcademy</a
+      >
+    </div>
+  </footer>
+</div>
+
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("copyright-year").textContent = currentYear;
+</script>

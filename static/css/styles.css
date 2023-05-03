@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=PT+Sans&family=Work+Sans:wght@500&display=swap');
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.logoTitle{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.divDefaultHeight {
+  min-height: 90vh;
+}
+
+.linkLine {
+  position: relative;
+}
+
+.linkLine::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.linkLine:hover::after {
+  background-color: rgb(77, 19, 124);
+}
+
+.linkFooter {
+  position: relative;
+}
+
+.linkFooter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.linkFooter:hover::after {
+  background-color: rgb(77, 19, 124);
+}
+
+@media (max-width: 992px) {
+  /* Arreglar la alineación de los enlaces en el menú de tipo hamburguesa */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 5px;
+  }
+
+  /* Ocultar el span */
+  .separator {
+    display: none;
+  }
+}
+
+.fontSizeFooter {
+  font-size: x-small;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  padding-right: 40px;
+}
+
+.input-container::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: medium;
+  color: grey;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select-container {
+  position: relative;
+}
+
+.select-container input {
+  padding-right: 40px;
+}
+
+.select-container::after {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: medium;
+  color: grey;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-search-btn {
+  background-color: rgb(77, 19, 124);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-search-btn:hover {
+  background-color: rgb(81, 30, 182);
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.headerDiv {
+  height: 20vh;
+  background-color: rgb(77, 19, 124);
+  border-radius: 70px;
+}
+
+
+#mainDivHome {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/static/img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+}

@@ -1,0 +1,48 @@
+{% extends 'layout.html' %} 
+
+{% block content %}
+
+<div class="divDefaultHeight">
+
+<div id="mainDivHome" class="p-3 d-flex align-items-center">
+    <div  class="w-50 m-auto text-center">
+      <form>
+        <div class="mt-5 mb-5">
+          <h2 class="display-4 text-white">Buscar Proyectos</h2>
+        </div>
+        <div class="mb-5 input-container">
+          <input
+            placeholder="Ingrese una o varias palabras clave"
+            type="text"
+            class="form-control rounded-4 border border-2"
+            id="inputSerchKeywords"
+          />
+        </div>
+    <div>
+        <h5 class="text-white">Seleccione un país</h5>
+    </div>
+    <div class="mb-5 select-container">
+      <select class="form-select rounded-4 border border-2" aria-label="Country Select">
+        <option value="Argentina" selected>Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="España">España</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Venezuela">Venezuela</option>
+      </select>
+    </div>
+    <button type="submit" class="btn custom-search-btn btn-lg rounded-4">Buscar Proyectos</button>
+  </form>
+  </div>
+</div>
+
+  <div class="container headerDiv mt-1 mb-1 d-flex align-items-center">
+<div class="text-center m-auto">
+    <h3 class="text-white">¿Buscas formarte como Developer?</h3>
+    <button type="button" class="btn btn-outline-light btn-lg rounded-4">+INFO</button>
+</div>
+  </div>
+
+</div>
+
+{% endblock %}

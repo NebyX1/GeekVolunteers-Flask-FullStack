@@ -1,0 +1,16 @@
+Paso 0 - Crear el directorio de migraciones e inicializar la base de datos:
+
+> db.init_app(app)
+> migrate = Migrate(app, db)
+
+
+
+Primer paso - Describe los cambios a aplicar en la migración:
+
+> flask db migrate -m "Change owner to owner_id"
+
+
+
+Segundo paso - Hacer la migración efectiva:
+
+> flask db upgrade

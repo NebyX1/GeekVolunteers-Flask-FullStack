@@ -1,0 +1,4 @@
+Activar entorno virtual: venv\Scripts\activate
+Correr el servidor: python run.py
+Crear archivo requirements.txt: pip freeze > requirements.txt
+Instalar todas las librerías y dependencias: pip install -r requirements.txt
